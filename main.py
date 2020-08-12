@@ -36,7 +36,7 @@ class App:
 def main():
     parser = argparse.ArgumentParser(description="Weather Forecast Predictions")
     parser.add_argument("--db", default="lemonade.db", type=os.path.abspath,
-                        help="DB full path to connect to.", required=True)
+                        help="DB full path to connect to.")
     parser.add_argument("--create-tables", action="store_true",
                         help="Whether to create the tables and its tables, or use an existed one.")
     args = parser.parse_args()
